@@ -1,1 +1,1 @@
-worker: python dashboard.py --loop
+web: gunicorn app:app
