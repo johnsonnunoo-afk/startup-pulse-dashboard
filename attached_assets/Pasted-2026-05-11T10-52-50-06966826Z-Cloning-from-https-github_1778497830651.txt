@@ -1,0 +1,74 @@
+2026-05-11T10:52:50.06966826Z ==> Cloning from https://github.com/johnsonnunoo-afk/startup-pulse-dashboard
+2026-05-11T10:52:50.628964072Z ==> Checking out commit 509e0bb87ff51147fd8177b581b80e0a097dd083 in branch main
+2026-05-11T10:52:52.0956455Z ==> Using Python version 3.14.3 (default)
+2026-05-11T10:52:52.09565855Z ==> Docs on specifying a Python version: https://render.com/docs/python-version
+2026-05-11T10:52:52.095803578Z ==> Installing Python version 3.14.3...
+2026-05-11T10:53:00.948346359Z ==> Using Poetry version 2.1.3 (default)
+2026-05-11T10:53:01.032747036Z ==> Docs on specifying a Poetry version: https://render.com/docs/poetry-version
+2026-05-11T10:53:01.149258506Z ==> Running build command 'pip install -r requirements.txt'...
+2026-05-11T10:53:02.160225201Z Collecting matplotlib>=3.8.0 (from -r requirements.txt (line 1))
+2026-05-11T10:53:02.262353896Z   Downloading matplotlib-3.10.9-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (52 kB)
+2026-05-11T10:53:02.571494173Z Collecting numpy>=1.26.0 (from -r requirements.txt (line 2))
+2026-05-11T10:53:02.582812529Z   Downloading numpy-2.4.4-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+2026-05-11T10:53:02.769156082Z Collecting rich>=13.7.0 (from -r requirements.txt (line 3))
+2026-05-11T10:53:02.780776804Z   Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+2026-05-11T10:53:03.05646434Z Collecting contourpy>=1.0.1 (from matplotlib>=3.8.0->-r requirements.txt (line 1))
+2026-05-11T10:53:03.068810239Z   Downloading contourpy-1.3.3-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (5.5 kB)
+2026-05-11T10:53:03.265046214Z Collecting cycler>=0.10 (from matplotlib>=3.8.0->-r requirements.txt (line 1))
+2026-05-11T10:53:03.276316077Z   Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+2026-05-11T10:53:03.558431646Z Collecting fonttools>=4.22.0 (from matplotlib>=3.8.0->-r requirements.txt (line 1))
+2026-05-11T10:53:03.570285549Z   Downloading fonttools-4.62.1-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (117 kB)
+2026-05-11T10:53:03.755060901Z Collecting kiwisolver>=1.3.1 (from matplotlib>=3.8.0->-r requirements.txt (line 1))
+2026-05-11T10:53:03.768538178Z   Downloading kiwisolver-1.5.0-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (5.1 kB)
+2026-05-11T10:53:03.838832046Z Collecting packaging>=20.0 (from matplotlib>=3.8.0->-r requirements.txt (line 1))
+2026-05-11T10:53:03.851259729Z   Downloading packaging-26.2-py3-none-any.whl.metadata (3.5 kB)
+2026-05-11T10:53:04.149688442Z Collecting pillow>=8 (from matplotlib>=3.8.0->-r requirements.txt (line 1))
+2026-05-11T10:53:04.161247971Z   Downloading pillow-12.2.0-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (8.8 kB)
+2026-05-11T10:53:04.270320845Z Collecting pyparsing>=3 (from matplotlib>=3.8.0->-r requirements.txt (line 1))
+2026-05-11T10:53:04.281501823Z   Downloading pyparsing-3.3.2-py3-none-any.whl.metadata (5.8 kB)
+2026-05-11T10:53:04.550962518Z Collecting python-dateutil>=2.7 (from matplotlib>=3.8.0->-r requirements.txt (line 1))
+2026-05-11T10:53:04.562299984Z   Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+2026-05-11T10:53:04.674195815Z Collecting markdown-it-py>=2.2.0 (from rich>=13.7.0->-r requirements.txt (line 3))
+2026-05-11T10:53:04.686011546Z   Downloading markdown_it_py-4.2.0-py3-none-any.whl.metadata (7.4 kB)
+2026-05-11T10:53:04.793411264Z Collecting pygments<3.0.0,>=2.13.0 (from rich>=13.7.0->-r requirements.txt (line 3))
+2026-05-11T10:53:04.807914984Z   Downloading pygments-2.20.0-py3-none-any.whl.metadata (2.5 kB)
+2026-05-11T10:53:04.850703078Z Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=13.7.0->-r requirements.txt (line 3))
+2026-05-11T10:53:04.862224545Z   Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+2026-05-11T10:53:04.897819037Z Collecting six>=1.5 (from python-dateutil>=2.7->matplotlib>=3.8.0->-r requirements.txt (line 1))
+2026-05-11T10:53:04.909494991Z   Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+2026-05-11T10:53:04.931331651Z Downloading matplotlib-3.10.9-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (9.9 MB)
+2026-05-11T10:53:05.392832583Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.9/9.9 MB 22.4 MB/s  0:00:00
+2026-05-11T10:53:05.404920518Z Downloading numpy-2.4.4-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.6 MB)
+2026-05-11T10:53:05.630356054Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.6/16.6 MB 74.8 MB/s  0:00:00
+2026-05-11T10:53:05.641888891Z Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+2026-05-11T10:53:05.670137323Z Downloading pygments-2.20.0-py3-none-any.whl (1.2 MB)
+2026-05-11T10:53:05.69520827Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 50.7 MB/s  0:00:00
+2026-05-11T10:53:05.70738405Z Downloading contourpy-1.3.3-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (363 kB)
+2026-05-11T10:53:05.729202849Z Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+2026-05-11T10:53:05.746843632Z Downloading fonttools-4.62.1-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (4.9 MB)
+2026-05-11T10:53:05.796480561Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.9/4.9 MB 100.2 MB/s  0:00:00
+2026-05-11T10:53:05.808426359Z Downloading kiwisolver-1.5.0-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.5 MB)
+2026-05-11T10:53:05.825271231Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 87.6 MB/s  0:00:00
+2026-05-11T10:53:05.920807925Z Downloading markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+2026-05-11T10:53:05.938952253Z Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+2026-05-11T10:53:05.956976026Z Downloading packaging-26.2-py3-none-any.whl (100 kB)
+2026-05-11T10:53:05.974854221Z Downloading pillow-12.2.0-cp314-cp314-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (7.1 MB)
+2026-05-11T10:53:06.037319154Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.1/7.1 MB 115.5 MB/s  0:00:00
+2026-05-11T10:53:06.048765856Z Downloading pyparsing-3.3.2-py3-none-any.whl (122 kB)
+2026-05-11T10:53:06.06718758Z Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+2026-05-11T10:53:06.086114459Z Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+2026-05-11T10:53:06.195591514Z Installing collected packages: six, pyparsing, pygments, pillow, packaging, numpy, mdurl, kiwisolver, fonttools, cycler, python-dateutil, markdown-it-py, contourpy, rich, matplotlib
+2026-05-11T10:53:14.36154297Z 
+2026-05-11T10:53:14.364604408Z Successfully installed contourpy-1.3.3 cycler-0.12.1 fonttools-4.62.1 kiwisolver-1.5.0 markdown-it-py-4.2.0 matplotlib-3.10.9 mdurl-0.1.2 numpy-2.4.4 packaging-26.2 pillow-12.2.0 pygments-2.20.0 pyparsing-3.3.2 python-dateutil-2.9.0.post0 rich-15.0.0 six-1.17.0
+2026-05-11T10:53:14.5217348Z 
+2026-05-11T10:53:14.521760621Z [notice] A new release of pip is available: 25.3 -> 26.1.1
+2026-05-11T10:53:14.521764561Z [notice] To update, run: pip install --upgrade pip
+2026-05-11T10:53:18.158191662Z ==> Uploading build...
+2026-05-11T10:53:27.926586006Z ==> Uploaded in 6.6s. Compression took 3.2s
+2026-05-11T10:53:28.004790133Z ==> Build successful 🎉
+2026-05-11T10:53:31.179509437Z ==> Deploying...
+2026-05-11T10:53:31.278155698Z ==> Setting WEB_CONCURRENCY=1 by default, based on available CPUs in the instance
+2026-05-11T10:53:44.317399431Z ==> Running 'gunicorn your_application.wsgi'
+2026-05-11T10:53:44.324127796Z bash: line 1: gunicorn: command not found
+2026-05-11T10:53:45.86083761Z ==> Exited with status 127
+2026-05-11T10:53:45.865259223Z ==> Common ways to troubleshoot your deploy: https://render.com/docs/troubleshooting-deploys
