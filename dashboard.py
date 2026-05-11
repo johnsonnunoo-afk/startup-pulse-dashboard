@@ -8,6 +8,7 @@ Usage:
     python dashboard.py              # Full dashboard
     python dashboard.py --export     # Export charts + PDF report
     python dashboard.py --demo       # Animated terminal demo
+    python dashboard.py --loop       # Continuous refresh mode (for Render)
 """
 
 import argparse
@@ -15,7 +16,7 @@ import os
 import sys
 import time
 import random
-from datetime import datetime, timedelta
+from datetime import datetime, timezone, timedelta
 
 import data
 import charts
@@ -33,6 +34,10 @@ def main():
     parser.add_argument(
         "--demo", action="store_true",
         help="Run animated terminal demo"
+    )
+    parser.add_argument(
+        "--loop", action="store_true",
+        help="Continuously refresh the dashboard every 60 seconds (for Render)"
     )
     args = parser.parse_args()
 
@@ -53,6 +58,18 @@ def main():
         charts.plot_cac_trend(monthly)
         print("\n✅  Charts saved to ./output/")
         terminal.print_summary(metrics, transactions)
+    elif args.loop:
+        refresh_interval = 60
+        print(f"🔄  Startup.OS — Continuous mode (refreshing every {refresh_interval}s)\n")
+        while True:
+            metrics = data.generate_metrics()
+            transactions = data.generate_transactions()
+            monthly = data.generate_monthly_series()
+            products = data.generate_product_revenue()
+            terminal.print_dashboard(metrics, transactions, monthly, products)
+            print(f"\n⏳  Next refresh in {refresh_interval}s — {datetime.now(timezone.utc).strftime('%H:%M:%S UTC')}\n")
+            sys.stdout.flush()
+            time.sleep(refresh_interval)
     else:
         terminal.print_dashboard(metrics, transactions, monthly, products)
 
